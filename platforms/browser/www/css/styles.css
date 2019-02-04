@@ -1,0 +1,112 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.index-bg {
+    background-image: url("../res/index-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.index-title-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 12vh;
+}
+
+.index-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 7vh;
+}
+
+.home-nav-title {
+    width: 80%;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-nav-back {
+    font-size: 1.6vh;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.home-list-item {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 20vh;
+    margin-bottom: 3vh;
+}
+
+.home-list-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+
+.home-list-overlay {
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.home-list-text {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.device-android .guests-content {
+    margin-top: 0vh;
+}
+
+.venue-list-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 90%;
+    height: 20vh;
+    object-fit: cover;
+}
