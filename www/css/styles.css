@@ -241,3 +241,36 @@
 .md .timeline-item-title {
     font-weight: bold;
 }
+
+.md .block-title {
+    margin-top: 3vh;
+    margin-left: 0;
+    margin-bottom: 3vh;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.md .block, .ios .block {
+    padding: 0;
+}
+
+.ios .block-title {
+    text-transform: unset;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 2vh;
+    font-size: 25px;
+    line-height: 2;
+}
+
+.ios .list .item-text {
+    color: black;
+}
+
+.demo-swiper {
+    margin-bottom: 3vh;
+}
+
+.md .list .item-content, .ios .list .item-content {
+    padding-left: 0;
+}
