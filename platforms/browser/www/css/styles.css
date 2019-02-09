@@ -16,7 +16,7 @@
 }
 
 .statusbar-overlay {
-    background: #000000;
+    background: white;
 }
 
 .index-title-img {
@@ -36,7 +36,7 @@
 .home-nav-title {
     width: 80%;
     margin-top: 1vh;
-    margin-bottom: 7vh;
+    margin-bottom: 4vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -97,6 +97,11 @@
     margin-top: 0vh;
 }
 
+.guests-conten-height {
+    height: 100%;
+    overflow: scroll;
+}
+
 .venue-list-img {
     display: block;
     margin-left: auto;
@@ -139,11 +144,12 @@
 }
 
 .index-title {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 3vh;
     margin-bottom: 5vh;
     color: gray;
     font-family: WildYouth;
+    white-space: nowrap;
 }
 
 .story-list-img {
@@ -157,22 +163,20 @@
 }
 
 .story-p {
-    margin-top: 5vh;
-    line-height: 3vh;
+    line-height: 2;
     color: black;
 }
 
 .guests-toolbar {
     position: absolute;
-    width: 80%;
+    width: 100%;
 }
 
 .md .guests-toolbar {
     position: inherit;
     width: 100%;
     height: 48px;
-    font-size: 14px;
-    margin-top: -10;
+    font-size: 12px;
 }
 
 .md .tabbar a.tab-link,
@@ -220,6 +224,9 @@
 
 .media-list .item-media img {
     border-radius: 50%;
+    height: 44px;
+    object-fit: cover;
+
 }
 
 .ios .list .item-media + .item-inner {
@@ -243,7 +250,7 @@
 }
 
 .md .block-title {
-    margin-top: 3vh;
+    margin-top: 0;
     margin-left: 0;
     margin-bottom: 3vh;
     font-size: 25px;
@@ -258,10 +265,12 @@
     text-transform: unset;
     margin-top: 0;
     margin-left: 0;
+    margin-right: 0;
     margin-bottom: 2vh;
     font-size: 25px;
     line-height: 2;
 }
+
 
 .ios .list .item-text {
     color: black;
@@ -273,4 +282,66 @@
 
 .md .list .item-content, .ios .list .item-content {
     padding-left: 0;
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+div.guests-sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+.guest-active {
+    background-image: linear-gradient(to bottom, rgba(209, 208, 207, 1), rgba(209, 208, 207, 1), rgba(209, 208, 207, 0)); 
+    height: 48px;
+}
+
+.title-active {
+    background-image: linear-gradient(to bottom, rgba(209, 208, 207, 1), rgba(209, 208, 207, 1), rgba(209, 208, 207, 0)); 
+    width: 100%;
+    color: white;
+}
+
+.scrollbox {
+    overflow: auto;
+    height: 80%;
+  }
+
+  .back-button {
+      height: 30px;
+      width: auto;
+  }
+
+  .ios .tabbar, .ios .tabbar-labels {
+      margin-top: 1vh;
+  }
+
+ .gradient-bg {
+     opacity: 1 !important;
+    background-image: linear-gradient(to bottom, rgba(209, 208, 207, 1), rgba(209, 208, 207, 1), rgba(209, 208, 207, 0)); 
+}
+
+.gradient-holder {
+    margin-top: -40px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    height: 50px;
+    -webkit-transition: all ease-out .13s;
+    -moz-transition: all ease-out .1s;
+    -o-transition: all ease-out .1s;
+    transition: all ease-out .1s;
 }
